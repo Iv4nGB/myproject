@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Hello {% endblock %}
+
+{% load static %}
+
+{% block header %}
+    <h2> Init </h2>
+{% endblock %}
+
+{% block main %}
+    <h3><a href="{% url 'index' %}">Поехали</a></h3>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

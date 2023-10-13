@@ -1,0 +1,605 @@
+INFO     |2023-10-05 17:40:55,139| Watching for file changes with StatReloader
+INFO     |2023-10-05 17:40:56,685| "GET / HTTP/1.1" 200 11047
+INFO     |2023-10-05 17:49:21,705| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myproject\urls.py changed, reloading.
+INFO     |2023-10-05 17:49:22,325| Watching for file changes with StatReloader
+WARNING  |2023-10-05 17:49:24,679| Not Found: /
+WARNING  |2023-10-05 17:49:24,680| "GET / HTTP/1.1" 404 2188
+INFO     |2023-10-05 17:51:38,216| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\urls.py changed, reloading.
+INFO     |2023-10-05 17:51:38,800| Watching for file changes with StatReloader
+WARNING  |2023-10-05 17:51:41,503| Not Found: /
+WARNING  |2023-10-05 17:51:41,504| "GET / HTTP/1.1" 404 2188
+INFO     |2023-10-05 17:52:39,373| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\urls.py changed, reloading.
+INFO     |2023-10-05 17:52:39,955| Watching for file changes with StatReloader
+INFO     |2023-10-05 17:52:41,490| "GET / HTTP/1.1" 200 250
+INFO     |2023-10-05 17:52:42,285| "GET / HTTP/1.1" 200 250
+INFO     |2023-10-05 17:52:42,605| "GET / HTTP/1.1" 200 250
+INFO     |2023-10-05 17:52:42,869| "GET / HTTP/1.1" 200 250
+INFO     |2023-10-05 17:55:06,825| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\models.py changed, reloading.
+INFO     |2023-10-05 17:55:07,405| Watching for file changes with StatReloader
+INFO     |2023-10-05 17:55:36,769| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:01:10,265| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:01:11,819| "GET / HTTP/1.1" 200 229
+INFO     |2023-10-05 18:39:37,708| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:39:40,840| "GET / HTTP/1.1" 200 229
+WARNING  |2023-10-05 18:39:41,024| Not Found: /favicon.ico
+WARNING  |2023-10-05 18:39:41,024| "GET /favicon.ico HTTP/1.1" 404 2399
+INFO     |2023-10-05 18:39:48,334| "GET / HTTP/1.1" 200 229
+INFO     |2023-10-05 18:39:48,774| "GET / HTTP/1.1" 200 229
+INFO     |2023-10-05 18:42:08,634| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\views.py changed, reloading.
+INFO     |2023-10-05 18:42:09,257| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:45:56,980| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\urls.py changed, reloading.
+INFO     |2023-10-05 18:45:57,592| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:46:00,426| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 18:46:01,562| "GET /index/ HTTP/1.1" 200 657
+ERROR    |2023-10-05 18:46:05,196| Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+ERROR    |2023-10-05 18:46:05,205| "GET /admin/ HTTP/1.1" 500 197176
+INFO     |2023-10-05 18:46:08,236| "GET /add_product/ HTTP/1.1" 200 1877
+ERROR    |2023-10-05 18:46:10,238| Internal Server Error: /update_product/
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\views.py", line 73, in update_product
+    return render(request, 'myapp/product_add.html', {'form': form, 'message': message, 'title': 'Обновить продукт'})
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\utils.py", line 75, in render
+    return mark_safe(renderer.render(template, context))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\boundfield.py", line 107, in as_widget
+    return widget.render(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\widgets.py", line 280, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\widgets.py", line 758, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\widgets.py", line 717, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\widgets.py", line 657, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 1403, in __iter__
+    for obj in queryset:
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 516, in _iterator
+    yield from iterable
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp_product
+ERROR    |2023-10-05 18:46:10,256| "GET /update_product/ HTTP/1.1" 500 329953
+ERROR    |2023-10-05 18:46:15,476| Internal Server Error: /show_clients/
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: myapp_client
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\views.py", line 83, in show_clients
+    return render(request, 'myapp/index.html', {'clients': clients})
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\template\defaulttags.py", line 320, in render
+    if match:
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 412, in __bool__
+    self._fetch_all()
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: myapp_client
+ERROR    |2023-10-05 18:46:15,481| "GET /show_clients/ HTTP/1.1" 500 208032
+INFO     |2023-10-05 18:47:06,624| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:47:11,700| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 18:47:12,134| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 18:47:13,914| "GET /index/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:47:15,970| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 18:47:16,013| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:47:23,884| "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO     |2023-10-05 18:47:25,462| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:47:27,026| "GET /add_product/ HTTP/1.1" 200 1877
+INFO     |2023-10-05 18:47:51,201| "POST /add_product/ HTTP/1.1" 200 1923
+INFO     |2023-10-05 18:48:17,789| "POST /add_product/ HTTP/1.1" 200 1915
+INFO     |2023-10-05 18:48:19,473| "GET /index/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:21,138| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:21,311| "GET /media/images/2.jpg HTTP/1.1" 200 14436
+INFO     |2023-10-05 18:48:21,318| "GET /media/images/4.jpg HTTP/1.1" 200 6008
+INFO     |2023-10-05 18:48:24,246| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:26,055| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:26,067| "GET /media/images/2.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:26,071| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:27,542| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:28,004| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:28,015| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:28,706| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:31,159| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:31,175| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:31,175| "GET /media/images/2.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:33,357| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:35,182| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:35,199| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:35,200| "GET /media/images/2.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:35,664| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:36,153| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:36,680| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:48:37,049| "GET /show_products/ HTTP/1.1" 200 1201
+INFO     |2023-10-05 18:48:37,065| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:48:37,737| "GET /show_clients/ HTTP/1.1" 200 657
+INFO     |2023-10-05 18:49:58,890| "GET /show_clients/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:49:59,247| "GET /show_clients/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:50:02,293| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 18:50:02,308| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:50:10,133| "GET /add_product/ HTTP/1.1" 200 1738
+INFO     |2023-10-05 18:50:11,661| "GET /index/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:50:12,552| "GET /update_product/ HTTP/1.1" 200 2152
+INFO     |2023-10-05 18:50:14,731| "GET /index/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:50:15,797| "GET /add_product/ HTTP/1.1" 200 1738
+INFO     |2023-10-05 18:50:17,210| "GET /index/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:50:18,613| "GET /update_product/ HTTP/1.1" 200 2152
+INFO     |2023-10-05 18:50:40,082| "POST /update_product/ HTTP/1.1" 200 2134
+INFO     |2023-10-05 18:50:41,914| "GET /index/ HTTP/1.1" 200 659
+INFO     |2023-10-05 18:50:43,745| "GET /show_products/ HTTP/1.1" 200 1087
+INFO     |2023-10-05 18:50:43,760| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:51:49,217| "GET /show_products/ HTTP/1.1" 200 1087
+INFO     |2023-10-05 18:51:49,234| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:51:49,764| "GET /show_products/ HTTP/1.1" 200 1066
+INFO     |2023-10-05 18:51:50,519| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 18:51:50,537| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:51:52,939| "GET /show_products/ HTTP/1.1" 200 1066
+INFO     |2023-10-05 18:51:53,362| "GET /show_products/ HTTP/1.1" 200 1066
+INFO     |2023-10-05 18:52:05,479| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:52:06,706| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 18:52:08,349| "GET /index/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:52:09,296| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 18:52:09,330| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:54:56,123| Watching for file changes with StatReloader
+INFO     |2023-10-05 18:54:58,615| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 18:55:09,227| "GET /index/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:09,776| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 18:55:09,808| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 18:55:11,676| "GET /add_product/ HTTP/1.1" 200 1738
+INFO     |2023-10-05 18:55:13,226| "GET /update_product/ HTTP/1.1" 200 2152
+INFO     |2023-10-05 18:55:14,693| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:16,168| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:16,709| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:17,618| "GET /show_products/ HTTP/1.1" 200 1066
+INFO     |2023-10-05 18:55:17,637| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 18:55:18,513| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:19,029| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 18:55:19,367| "GET /show_clients/ HTTP/1.1" 200 638
+INFO     |2023-10-05 19:00:04,688| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:00:05,751| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 19:00:08,493| "GET /index/ HTTP/1.1" 200 638
+INFO     |2023-10-05 19:00:10,700| "GET /admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 19:00:10,735| "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO     |2023-10-05 19:00:20,459| "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO     |2023-10-05 19:00:20,482| "GET /admin/ HTTP/1.1" 200 7409
+INFO     |2023-10-05 19:00:27,022| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:00:27,055| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:00:32,633| "GET /admin/myapp/client/add/ HTTP/1.1" 200 12104
+INFO     |2023-10-05 19:00:32,655| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:00:41,544| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:00:41,563| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:00:43,040| "GET /admin/myapp/client/add/ HTTP/1.1" 200 12104
+INFO     |2023-10-05 19:00:43,061| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:00:55,619| "GET /admin/myapp/order/ HTTP/1.1" 200 9828
+INFO     |2023-10-05 19:00:55,639| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:00:57,112| "GET /admin/myapp/order/add/ HTTP/1.1" 200 11135
+INFO     |2023-10-05 19:00:57,131| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:01:00,086| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:01:00,106| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:01:04,127| "GET /admin/myapp/product/ HTTP/1.1" 200 13048
+INFO     |2023-10-05 19:01:04,145| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:01:05,073| "GET /admin/myapp/product/add/ HTTP/1.1" 200 12278
+INFO     |2023-10-05 19:01:05,092| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:01:46,170| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\admin.py changed, reloading.
+INFO     |2023-10-05 19:01:46,794| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:01:49,604| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:01:49,627| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR    |2023-10-05 19:01:51,045| Internal Server Error: /admin/myapp/client/add/
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 300, in __new__
+    fields = fields_for_model(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 198, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'registration_date' cannot be specified for Client model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'registration_date' cannot be specified for Client model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class ClientAdmin.
+ERROR    |2023-10-05 19:01:51,050| "GET /admin/myapp/client/add/ HTTP/1.1" 500 138411
+INFO     |2023-10-05 19:02:11,176| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\admin.py changed, reloading.
+INFO     |2023-10-05 19:02:11,833| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:02:13,254| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:02:15,549| "GET /admin/myapp/client/add/ HTTP/1.1" 200 12194
+INFO     |2023-10-05 19:02:15,573| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:02:30,117| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:02:41,752| "GET /admin/myapp/client/ HTTP/1.1" 200 9902
+INFO     |2023-10-05 19:02:41,776| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:02:42,498| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\admin.py changed, reloading.
+INFO     |2023-10-05 19:02:43,186| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:02:44,187| "GET /admin/myapp/client/add/ HTTP/1.1" 200 12137
+INFO     |2023-10-05 19:02:44,211| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:03:00,590| "POST /admin/myapp/client/add/ HTTP/1.1" 302 0
+INFO     |2023-10-05 19:03:00,626| "GET /admin/myapp/client/ HTTP/1.1" 200 12077
+INFO     |2023-10-05 19:03:00,650| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:03:04,823| "GET /admin/myapp/client/1/change/ HTTP/1.1" 200 12499
+INFO     |2023-10-05 19:03:04,849| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:03:08,635| "GET /admin/myapp/client/ HTTP/1.1" 200 11860
+INFO     |2023-10-05 19:03:11,364| "GET /admin/myapp/order/ HTTP/1.1" 200 9828
+INFO     |2023-10-05 19:03:11,382| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:03:13,438| "GET /admin/myapp/product/ HTTP/1.1" 200 13048
+INFO     |2023-10-05 19:03:13,458| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR    |2023-10-05 19:03:15,141| Internal Server Error: /admin/myapp/product/add/
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 300, in __new__
+    fields = fields_for_model(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\forms\models.py", line 198, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'date_ordered' cannot be specified for Product model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Bekinsale\Desktop\FrameworkDjango\venv\lib\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'date_ordered' cannot be specified for Product model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class ProductAdmin.
+ERROR    |2023-10-05 19:03:15,148| "GET /admin/myapp/product/add/ HTTP/1.1" 500 138502
+INFO     |2023-10-05 19:03:41,877| "GET /admin/myapp/product/ HTTP/1.1" 200 13048
+INFO     |2023-10-05 19:03:42,561| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myapp\admin.py changed, reloading.
+INFO     |2023-10-05 19:03:43,212| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:03:46,753| "GET /admin/myapp/product/add/ HTTP/1.1" 200 12382
+INFO     |2023-10-05 19:03:46,777| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:09,999| "POST /admin/myapp/product/add/ HTTP/1.1" 302 0
+INFO     |2023-10-05 19:04:10,038| "GET /admin/myapp/product/ HTTP/1.1" 200 13658
+INFO     |2023-10-05 19:04:10,058| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:12,435| "GET /admin/myapp/product/2/change/ HTTP/1.1" 200 12961
+INFO     |2023-10-05 19:04:12,457| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:15,927| "GET /admin/myapp/product/ HTTP/1.1" 200 13452
+INFO     |2023-10-05 19:04:17,144| "GET /admin/myapp/product/1/change/ HTTP/1.1" 200 12650
+INFO     |2023-10-05 19:04:17,163| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:19,552| "GET /admin/myapp/product/ HTTP/1.1" 200 13452
+INFO     |2023-10-05 19:04:20,183| "GET /admin/myapp/product/add/ HTTP/1.1" 200 12382
+INFO     |2023-10-05 19:04:21,773| "GET /admin/myapp/client/ HTTP/1.1" 200 11860
+INFO     |2023-10-05 19:04:21,795| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:26,455| "GET /admin/myapp/order/ HTTP/1.1" 200 9828
+INFO     |2023-10-05 19:04:26,474| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:30,302| "GET /admin/myapp/order/add/ HTTP/1.1" 200 13387
+INFO     |2023-10-05 19:04:30,322| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:43,651| "POST /admin/myapp/order/add/ HTTP/1.1" 302 0
+INFO     |2023-10-05 19:04:43,670| "GET /admin/myapp/order/ HTTP/1.1" 200 12059
+INFO     |2023-10-05 19:04:43,690| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:45,573| "GET /admin/myapp/order/1/change/ HTTP/1.1" 200 13742
+INFO     |2023-10-05 19:04:45,592| "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO     |2023-10-05 19:04:55,186| "GET /admin/myapp/order/ HTTP/1.1" 200 11825
+INFO     |2023-10-05 19:05:03,242| "GET / HTTP/1.1" 200 278
+INFO     |2023-10-05 19:05:04,295| "GET /index/ HTTP/1.1" 200 638
+INFO     |2023-10-05 19:05:06,454| "GET /admin/ HTTP/1.1" 200 8327
+INFO     |2023-10-05 19:05:09,379| "GET /add_product/ HTTP/1.1" 200 1738
+INFO     |2023-10-05 19:05:12,142| "GET /show_clients/ HTTP/1.1" 200 952
+INFO     |2023-10-05 19:05:13,800| "GET /show_products/ HTTP/1.1" 200 1308
+INFO     |2023-10-05 19:05:13,815| "GET /media/images/4.jpg HTTP/1.1" 304 0
+INFO     |2023-10-05 19:05:13,925| "GET /media/images/3.jpg HTTP/1.1" 200 46992
+INFO     |2023-10-05 19:05:16,120| "GET /show_clients/ HTTP/1.1" 200 952
+INFO     |2023-10-05 19:05:17,101| "GET /show_products/ HTTP/1.1" 200 1308
+INFO     |2023-10-05 19:05:18,530| "GET /show_clients/ HTTP/1.1" 200 952
+INFO     |2023-10-05 19:05:19,204| "GET /show_products/ HTTP/1.1" 200 1308
+INFO     |2023-10-05 19:32:06,279| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:32:10,281| "GET / HTTP/1.1" 200 10051
+INFO     |2023-10-05 19:32:10,320| "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO     |2023-10-05 19:32:10,330| "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO     |2023-10-05 19:32:10,336| "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO     |2023-10-05 19:32:10,363| "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO     |2023-10-05 19:32:31,593| "GET /index/ HTTP/1.1" 200 10418
+INFO     |2023-10-05 19:32:41,130| "GET /add_product/ HTTP/1.1" 200 11538
+INFO     |2023-10-05 19:33:12,410| "POST /add_product/ HTTP/1.1" 200 11583
+INFO     |2023-10-05 19:33:14,556| "GET /index/ HTTP/1.1" 200 10418
+INFO     |2023-10-05 19:33:15,644| "GET /show_products/ HTTP/1.1" 200 11368
+WARNING  |2023-10-05 19:33:15,759| Not Found: /media/images/3.jpg
+WARNING  |2023-10-05 19:33:15,760| "GET /media/images/3.jpg HTTP/1.1" 404 13072
+WARNING  |2023-10-05 19:33:15,765| Not Found: /media/images/4.jpg
+WARNING  |2023-10-05 19:33:15,769| Not Found: /media/images/4_wznmVSL.jpg
+WARNING  |2023-10-05 19:33:15,770| "GET /media/images/4.jpg HTTP/1.1" 404 13073
+WARNING  |2023-10-05 19:33:15,770| "GET /media/images/4_wznmVSL.jpg HTTP/1.1" 404 13105
+INFO     |2023-10-05 19:33:19,693| "GET /show_products/ HTTP/1.1" 200 11368
+WARNING  |2023-10-05 19:33:19,792| Not Found: /media/images/4_wznmVSL.jpg
+WARNING  |2023-10-05 19:33:19,797| Not Found: /media/images/3.jpg
+WARNING  |2023-10-05 19:33:19,797| "GET /media/images/4_wznmVSL.jpg HTTP/1.1" 404 13104
+WARNING  |2023-10-05 19:33:19,798| "GET /media/images/3.jpg HTTP/1.1" 404 13072
+WARNING  |2023-10-05 19:33:19,803| Not Found: /media/images/4.jpg
+WARNING  |2023-10-05 19:33:19,804| "GET /media/images/4.jpg HTTP/1.1" 404 13072
+INFO     |2023-10-05 19:33:27,069| C:\Users\Bekinsale\Desktop\FrameworkDjango\myproject\myproject\urls.py changed, reloading.
+INFO     |2023-10-05 19:33:27,783| Watching for file changes with StatReloader
+INFO     |2023-10-05 19:33:29,918| "GET /show_products/ HTTP/1.1" 200 11369
+INFO     |2023-10-05 19:33:29,971| "GET /media/images/3.jpg HTTP/1.1" 200 46992
+INFO     |2023-10-05 19:33:29,980| "GET /media/images/4.jpg HTTP/1.1" 200 6008
+INFO     |2023-10-05 19:33:29,996| "GET /media/images/4_wznmVSL.jpg HTTP/1.1" 200 6008
+INFO     |2023-10-05 19:33:42,654| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=HistoryPanel HTTP/1.1" 200 7483
+INFO     |2023-10-05 19:33:42,675| "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3330
+INFO     |2023-10-05 19:33:53,204| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=VersionsPanel HTTP/1.1" 200 761
+INFO     |2023-10-05 19:33:58,845| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=SettingsPanel HTTP/1.1" 200 26766
+INFO     |2023-10-05 19:34:00,615| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=HeadersPanel HTTP/1.1" 200 5467
+INFO     |2023-10-05 19:34:10,300| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=RequestPanel HTTP/1.1" 200 2325
+INFO     |2023-10-05 19:34:12,204| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=SQLPanel HTTP/1.1" 200 48423
+INFO     |2023-10-05 19:34:17,697| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=StaticFilesPanel HTTP/1.1" 200 34219
+INFO     |2023-10-05 19:34:20,136| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=TemplatesPanel HTTP/1.1" 200 6032
+INFO     |2023-10-05 19:34:33,736| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO     |2023-10-05 19:34:37,451| "GET /__debug__/render_panel/?store_id=d524b1f19f784edcbe126dbf17f0bb73&panel_id=SignalsPanel HTTP/1.1" 200 2309
